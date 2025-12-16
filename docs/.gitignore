@@ -1,0 +1,65 @@
+# ===============================
+# Java / Maven
+# ===============================
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# ===============================
+# IDEs
+# ===============================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# ===============================
+# Logs
+# ===============================
+*.log
+logs/
+
+# ===============================
+# OS
+# ===============================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# MacOS
+.DS_Store
+
+# ===============================
+# Environment / Secrets
+# ===============================
+.env
+.env.*
+application-local.yml
+
+# ===============================
+# Docker
+# ===============================
+*.tar
+
+# ===============================
+# Draw.io backups (opcional)
+# ===============================
+*.drawio.bkp
