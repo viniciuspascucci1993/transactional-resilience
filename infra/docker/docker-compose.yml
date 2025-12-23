@@ -1,7 +1,6 @@
-version: "3.8"
-
 services:
   postgres:
+    container_name: transactional-resilience-postgres
     image: postgres:16
     ports:
       - "5444:5432"
@@ -9,15 +8,3 @@ services:
       POSTGRES_DB: resilience
       POSTGRES_USER: resilience
       POSTGRES_PASSWORD: resilience
-
-  app:
-    build:
-      context: ../../backend/transactional-resilience-api
-    ports:
-      - "8080:8080"
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/resilience
-      SPRING_DATASOURCE_USERNAME: resilience
-      SPRING_DATASOURCE_PASSWORD: resilience
-    depends_on:
-      - postgres
