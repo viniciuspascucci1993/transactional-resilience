@@ -1,4 +1,4 @@
-package com.yourname.transactionalresilience.api;
+package com.yourname.transactionalresilience;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
